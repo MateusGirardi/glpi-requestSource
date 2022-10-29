@@ -1,0 +1,11 @@
+{
+  "name": "Required Field GLPI",
+  "description": "You can set a field like required!",
+  "version": "1.2",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["scripting"],
+  "host_permissions": ["http://helpdesk.baspan.com.br/"]
+}
