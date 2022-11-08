@@ -1,6 +1,9 @@
 const mainInterval = setInterval(function () {
 
     var form = document.querySelector("[action='/front/itilfollowup.form.php']");
+    if(form === undefined || form === null){
+        form = document.querySelector("[action='/front/ticket.form.php']");
+    }
 
     if(form !== undefined && form !== null){
         clearInterval(mainInterval);
